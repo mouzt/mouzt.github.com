@@ -26,9 +26,9 @@ group: "navigation"
 
 ### 联系我？
 
-我的邮箱：g.everax(at)gmail.com，有时查的很勤，有时就少看  
-新浪微博: [iEverX][weibo]，有事没事就去逛逛  
-github：[iEverX][github]，我的一些代码可以在这里找到  
+我的邮箱：mztsmile(at)gmail.com，有时查的很勤，有时就少看
+新浪微博: [mztMaySmile][weibo]，有事没事就去逛逛
+github：[mouzt][github]，我的一些代码可以在这里找到
 
 [weibo]: http://weibo.com/ieverx
 [github]: http://github.com/iEverX

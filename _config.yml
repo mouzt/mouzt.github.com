@@ -13,16 +13,16 @@ timezone: Asia/Shanghai
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : 天外天
-address: EverCoding.net
-tagline: 天外有天，山外有山
+title : 站通@Coder
+address: mouzt.github.io
+tagline: walkingAndCoding，走着码着
 author :
   name : Ever
-  email : g.everax@gmail.com
-  github : iEverX
+  email : mztsmile@gmail.com
+  github : mouzt
   twitter : username
   feedburner : feedname
-start_year: "2012"
+start_year: "2014"
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt

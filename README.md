@@ -2,7 +2,7 @@
 
 A static blog built with [Jekyll][] on github pages
 
-**EverCoding.net** is my domain.
+**mouzt.github.io** is my domain.
 
 ---
 
