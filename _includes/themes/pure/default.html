@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/lib/pure/pure-min.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/lib/pure/grids-responsive-min.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/ever.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/lib/google-code-prettify/light.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/lib/font-awesome/css/font-awesome.min.css">
+    <script src="{{ ASSET_PATH }}/lib/jquery/jquery-1.11.1.min.js"></script>
+    <script src="{{ ASSET_PATH }}/lib/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?286a0fd3582530031faa80f383f53a77";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-5">
+            <div class="header">
+                <img src="{{ ASSET_PATH }}/img/avatar.png" alt="" class="pure-img avatar">
+                <hgroup>
+                    <h1 class="brand-title">{{ site.title }}</h1>
+                    <h2 class="brand-tagline">{{ site.tagline }}</h2>
+                </hgroup>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/archive.html">Archive</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/messages.html">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/links.html">Links</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="content pure-u-1 pure-u-md-4-5">
+            <div id="mainbody">
+                {{ content }}
+            </div>
+            <div class="footer">
+                <p>&copy; {{ site.start_year }} <span id="now_year"></span> {{ site.author.name }}. </p>
+                <script type="text/javascript">
+                  var now_year = new Date().getFullYear();
+                  if (now_year != {{ site.start_year }}) {
+                      $('#now_year').html('- ' + now_year);
+                  }
+                </script>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $('pre').addClass('prettyprint linenums').css('overflow-x', 'auto');
+            window.prettyPrint && prettyPrint();
+        });
+    </script>
+</body>
+</html>
